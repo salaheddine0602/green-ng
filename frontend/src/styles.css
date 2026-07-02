@@ -1,0 +1,7 @@
+/* Global styles — Green Box brand: dark green base, lime accent. */
+body {
+  margin: 0;
+  background: #0b2e1f;
+  color: #eef5ef;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}

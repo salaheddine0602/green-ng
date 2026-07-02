@@ -1,0 +1,40 @@
+<main class="shell">
+  <header>
+    <h1>Green <span class="accent">Box</span></h1>
+    <p class="tagline">Every financial decision is a closed box. Open one a day — decide first, learn after.</p>
+  </header>
+
+  @if (error(); as message) {
+    <p class="error">{{ message }}</p>
+  } @else if (box(); as b) {
+    <section class="box">
+      <p class="category">{{ b.category }}</p>
+      <h2>{{ b.title }}</h2>
+      <p class="scenario">{{ b.scenario }}</p>
+      <div class="options">
+        @for (option of b.options; track option) {
+          <button
+            type="button"
+            [class.chosen]="chosen() === option"
+            [disabled]="analysis() !== null"
+            (click)="decide(option)"
+          >
+            {{ option }}
+          </button>
+        }
+      </div>
+    </section>
+
+    @if (analysis(); as a) {
+      <section class="analysis">
+        <h3>AI analysis</h3>
+        <p>{{ a.summary }}</p>
+        <p class="biases">
+          Biases detected: {{ a.biasesDetected.length > 0 ? a.biasesDetected.join(', ') : 'none yet' }}
+        </p>
+      </section>
+    }
+  } @else {
+    <p class="loading">Opening today's box…</p>
+  }
+</main>
