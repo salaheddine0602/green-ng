@@ -1,11 +1,11 @@
-package com.selotech.ai.greenng.box;
+package com.greenbox.box;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Read side of the daily loop: fetch today's Mystery Box.
+ * Read side of the daily loop: fetch today's Mystery Box (الصندوق اليومي).
  */
 @RestController
 @RequestMapping("/api/boxes")

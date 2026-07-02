@@ -32,10 +32,10 @@ build/
 ### VS Code ###
 .vscode/
 
-### Node / Angular ###
+### Node / Next.js ###
 node_modules/
-frontend/dist/
-frontend/.angular/
+frontend/.next/
+frontend/out/
 npm-debug.log*
 
 ### Environment files ###

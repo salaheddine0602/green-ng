@@ -5,27 +5,27 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.13</version>
+        <version>4.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.selotech.ai</groupId>
     <artifactId>green-ng</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>green-ng</name>
-    <description>Green Box — AI-powered Financial Decision Intelligence platform (walking skeleton)</description>
+    <description>Green Box — AI-powered platform training financial decision-making skills through interactive scenarios from daily life</description>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>25</java.version>
     </properties>
 
     <!--
-        Phase 0 walking skeleton: web + security + test ONLY.
-        Spring AI, RabbitMQ, vector stores, etc. return in Phase 1 when they are actually used.
+        Prototype slice: web + security + test only. The SQL + Vector Database,
+        RAG, and agent layers arrive with the AI-integration step of the roadmap.
     -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-webmvc</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -33,7 +33,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-starter-webmvc-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

@@ -1,9 +1,11 @@
-package com.selotech.ai.greenng.box;
+package com.greenbox.box;
 
 import java.util.List;
 
 /**
- * A daily Mystery Box: one realistic financial scenario the user must decide on.
+ * Mystery Box (الصندوق اليومي) — a realistic financial situation that arrives
+ * once a day. The user makes their Decision (القرار) before knowing the
+ * outcome; that is the heart of the product.
  * <p>
  * Immutable by design — the box content is a fact, only the Decision changes.
  *

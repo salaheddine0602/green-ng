@@ -93,12 +93,6 @@ green-ng/
 
 Packages are organized **by feature** (`box`, `decision`), not by framework layer — the structure reveals the domain.
 
-## Contributors
-
-| Name | Role |
-| --- | --- |
-| <<FILL: name — role, one row per teammate>> | |
-
 ## Status
 
 **Hackathon walking skeleton — initial commit. Every layer is intentionally thin and will change.**

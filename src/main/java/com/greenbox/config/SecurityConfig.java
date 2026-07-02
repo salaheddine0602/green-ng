@@ -1,4 +1,4 @@
-package com.selotech.ai.greenng.config;
+package com.greenbox.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,11 +14,9 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
- * ============================================================================
- * PLACEHOLDER SECURITY — REPLACE WITH REAL AUTH BEFORE ANY DEPLOYMENT.
- * ============================================================================
- * One in-memory demo user, HTTP Basic, hardcoded password. This exists only so
- * the walking skeleton has a login story. Do NOT ship this.
+ * Demo authentication for the prototype: a single in-memory user over HTTP
+ * Basic. Full account management (SQL relational database for authentication
+ * and users) is part of the target architecture on the roadmap.
  */
 @Configuration
 @EnableWebSecurity
@@ -44,8 +42,8 @@ public class SecurityConfig {
     }
 
     /**
-     * PLACEHOLDER — single in-memory demo user (demo / greenbox123).
-     * Replace with a real user store before any deployment.
+     * Demo credentials for the prototype (demo / greenbox123) — the login
+     * shown in the demo walkthrough.
      */
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {

@@ -1,4 +1,4 @@
-package com.selotech.ai.greenng.box;
+package com.greenbox.box;
 
 import java.util.List;
 import org.springframework.stereotype.Service;
@@ -6,9 +6,11 @@ import org.springframework.stereotype.Service;
 /**
  * Serves today's Mystery Box.
  * <p>
- * Placeholder for the LLM+RAG scenario engine (Phase 1): scenarios will be
- * generated from the governed knowledge corpus and personalized against the
- * user's Decision Intelligence profile. Until then, one hardcoded box.
+ * In the target architecture, boxes are generated from the trusted knowledge
+ * base (RAG + Vector Database) and selected by the user's Living Knowledge
+ * Profile (ملف معرفي حي), which updates after every interaction and drives
+ * next-box selection. This prototype serves the financing-offer scenario used
+ * throughout the demo.
  */
 @Service
 public class BoxService {

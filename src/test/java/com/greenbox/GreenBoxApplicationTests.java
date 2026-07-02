@@ -1,10 +1,10 @@
-package com.selotech.ai.greenng;
+package com.greenbox;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GreenNgApplicationTests {
+class GreenBoxApplicationTests {
 
     @Test
     void contextLoads() {

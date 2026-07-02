@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Green Box brand: deep green base, lime accent. */
+:root {
+  --background: #0b2e1f;
+  --foreground: #eef5ef;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-deep-green: #0b2e1f;
+  --color-card-green: #0e3826;
+  --color-border-green: #1e4a35;
+  --color-muted-green: #9fbfae;
+  --color-lime-accent: #c8f542;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Segoe UI", Tahoma, system-ui, sans-serif;
+}
