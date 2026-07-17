@@ -1,5 +1,5 @@
 # Green Box
-##MVP Link : [greenbox-mauve.vercel.app](https://greenbox-mauve.vercel.app/)
+## MVP Link : [greenbox-mauve.vercel.app](https://greenbox-mauve.vercel.app/)
 
 > Every financial decision is a closed box. Open one a day — decide first, learn after.
 
